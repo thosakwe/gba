@@ -43,7 +43,7 @@ main() async {
         ..returns = refer('Instruction')
         ..requiredParameters.add(new Parameter((b) => b
           ..name = 'reader'
-          ..type = refer('BinaryReader')))
+          ..type = refer('ProgramCounter')))
         ..body = new Block((block) {
           // Loop through each one-byte instruction.
           var oneByteInstrs = <int, String>{};

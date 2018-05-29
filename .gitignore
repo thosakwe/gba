@@ -93,3 +93,4 @@ pubspec.lock
 # If you don't generate documentation locally you can remove this line.
 doc/api/
 
+tool/opcode_map.html
