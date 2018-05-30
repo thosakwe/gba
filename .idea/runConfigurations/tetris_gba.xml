@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="tetris.gba" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" singleton="true">
+    <option name="arguments" value="-c &quot;load tetris.gba; run&quot;" />
+    <option name="filePath" value="$PROJECT_DIR$/bin/dbg.dart" />
+    <option name="workingDirectory" value="$USER_HOME$/Downloads" />
+    <method />
+  </configuration>
+</component>

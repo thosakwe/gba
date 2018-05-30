@@ -6,13 +6,14 @@ class EmulatorState {
   Uint8List bytes;
   void Function() cls;
   void Function(Object) write, writeln;
+  String Function() readLineSync;
 
   EmulatorState();
 
   factory EmulatorState.forLogger(Logger logger) {
     return new EmulatorState()
-      ..cls = () => null
-        ..write = logger.info
-        ..writeln = logger.info;
+      ..cls = (() => null)
+      ..write = logger.info
+      ..writeln = logger.info;
   }
 }

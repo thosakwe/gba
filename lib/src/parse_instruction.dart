@@ -262,6 +262,8 @@ const Map oneByteInstrs = const {
 Instruction parseInstruction(ProgramCounter reader) {
   var op = reader.uint8;
 
+  if (op == 0xCB) throw 'Prefix!';
+
   for (var key in oneByteInstrs.keys) {
     if (op == key)
       return new Instruction(
